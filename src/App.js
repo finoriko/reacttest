@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import TOC from "./component/TOC"
+import Posts from "./component/Posts"
+import PostsForm from "./component/PostsForm"
 class Subject extends Component{
   render(){
     return(
@@ -87,13 +89,12 @@ class Content extends Component{
 function App() {
   return (
     <div className="App">
-      <FlavorForm></FlavorForm>
-      <Subject title="WEB" sub="World wide web!"></Subject>
-      <TOC></TOC>
-      <Content></Content>
-      {/* <Subject></Subject>
-      <TOC></TOC> */}
-    </div>
+        <header className="App-header">
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <PostsForm />
+        <Posts />
+      </div>
   );
 }
 
